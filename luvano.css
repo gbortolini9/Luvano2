@@ -41,7 +41,7 @@
 
 .estrutura {
     height: 100%;
-    width: 1800px;
+    width: 1200px;
 }
 
 #estrutura1 {
@@ -62,7 +62,7 @@
 #estrutura3 {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 80px;
     padding: 20px;
 }
 
@@ -141,16 +141,26 @@ nav ul li:hover {
     text-transform: uppercase;
 }
 
+.logo-titulo { 
+    width: 40px;
+}
+
+strong {
+    color: var(--laranja);
+    text-transform: uppercase;
+}
+
 #tec-inovacao {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.logo-titulo { 
-    width: 40px;
+#tec-inovacao-img {
+    display: flex;
+    justify-content: center;
 }
 
 #tec-inovacao-img img {
-    width: 200px;
+    width: 300px;
 }
