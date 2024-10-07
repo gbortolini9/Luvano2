@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    list-style-type: none;
+    transition: all 0.3s ease;
+}
+
+:root {
+    --cinza-escuro: #1B1C1B;
+    --cinza-claro: #383838;
+    --laranja: #EE7916;
+}
+
+/* Background da página */
+
+.background {
+    background-color: var(--cinza-claro);
+    display: flex;
+    justify-content: center;
+}
+
+#background1 {
+    height: 60vh;
+}
+
+#background2 {
+    height: 20px;
+    background-color: var(--laranja);
+}
+
+/* Estrutura das Sections */
+
+.estrutura {
+    height: 100%;
+    width: 100vw;
+}
+
+#estrutura1 {
+    background: linear-gradient( to top, #ffffff00, var(--cinza-claro)), 
+    url(img/background_3.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Personalização das Divs */
+
+#logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-section img {
+    width: 300px;
+}
+
+#nav-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    color: white;
+    padding: 30px 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-bottom: 1px solid transparent;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    border-bottom: solid 1px var(--laranja);
+}
+
+.li-laranja {
+    color: var(--laranja);
+}
+
+.li-branco {
+    color: white;
+}
+
+#banner-h2 {
+    text-align: center;
+
+}
+
+#banner-h2 h2 {
+    text-shadow: 1px 1px 5px black;
+}
