@@ -33,26 +33,42 @@
     background-color: var(--laranja);
 }
 
+#background3 {
+    background-color: white;
+}
+
 /* Estrutura das Sections */
 
 .estrutura {
     height: 100%;
-    width: 100vw;
+    width: 1800px;
 }
 
 #estrutura1 {
     background: linear-gradient( to top, #ffffff00, var(--cinza-claro)), 
-    url(img/background_3.jpg);
+    url(img/banner-04.jpg);
+
+    width: 100vw;
 
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center;
+    background-size: cover;
 
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-/* Personalização das Divs */
+#estrutura3 {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+/* ----- Personalização das Divs ----- */
+
+/* Referente à parte 1 do site, contendo Banner e linha de separação laranja */
 
 #logo-section {
     display: flex;
@@ -113,4 +129,28 @@ nav ul li:hover {
 #banner-h2 h2 {
     text-shadow: 1px 1px 5px black;
 
+}
+
+/* Referente à parte 3 do site, a parte de conteúdo "Tecnologia e Inovação */
+
+.titulos {
+    display: flex;
+    align-items: center;
+    color: var(--laranja);
+    gap: 10px;
+    text-transform: uppercase;
+}
+
+#tec-inovacao {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo-titulo { 
+    width: 40px;
+}
+
+#tec-inovacao-img img {
+    width: 200px;
 }
