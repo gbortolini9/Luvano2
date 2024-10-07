@@ -33,7 +33,7 @@
     background-color: var(--laranja);
 }
 
-#background3 {
+#background3, #background4, #background5 {
     background-color: white;
 }
 
@@ -64,6 +64,13 @@
     align-items: center;
     gap: 80px;
     padding: 20px;
+}
+
+#estrutura4 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 50px 0;
 }
 
 /* ----- Personalização das Divs ----- */
@@ -150,6 +157,10 @@ strong {
     text-transform: uppercase;
 }
 
+.txt-padrao {
+    font-size: 20px;
+}
+
 #tec-inovacao {
     display: flex;
     flex-direction: column;
@@ -163,4 +174,27 @@ strong {
 
 #tec-inovacao-img img {
     width: 300px;
+}
+
+/* Referente à parte 4 do site, a parte de boxes de Produtos */
+
+.prods {
+    width: 240px;
+    height: 140px;
+    background-color: lightgray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.prods:hover {
+    cursor: pointer;
+    background-color: var(--laranja);
+}
+
+.prods-img {
+    width: 70px;
 }
