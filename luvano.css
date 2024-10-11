@@ -42,6 +42,7 @@
 .estrutura {
     height: 100%;
     width: 1200px;
+    padding: 20px;
 }
 
 #estrutura1 {
@@ -57,13 +58,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 0;
 }
 
 #estrutura3 {
     display: flex;
     align-items: center;
     gap: 80px;
-    padding: 20px;
 }
 
 #estrutura4 {
@@ -227,7 +228,7 @@ strong {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    width: 90%;
+    width: 100%;
     border-radius: 15px;
     color: white
 }
