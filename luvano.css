@@ -33,7 +33,7 @@
     background-color: var(--laranja);
 }
 
-#background3, #background4, #background5 {
+#background3, #background4, #background5, #background6 {
     background-color: white;
 }
 
@@ -73,8 +73,10 @@
     padding: 50px 0;
 }
 
-#estrutura5 {
-
+#estrutura6 {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
 }
 
 /* ----- Personalização das Divs ----- */
@@ -214,4 +216,33 @@ strong {
 
 #sust-process img {
     width: 300px;
+    padding: 5px;
+}
+
+/* Referente à parte 6 do site, a parte de conteúdo "Recondicionamento */
+
+#recondicionamento {
+    background-color: rgb(105, 105, 105);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    border-radius: 15px;
+    color: white
+}
+
+#fibras {
+    width: 200px;
+}
+
+#recon-titulo {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#tit-back6 {
+    margin-bottom: 30px;
 }
