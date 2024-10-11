@@ -73,6 +73,10 @@
     padding: 50px 0;
 }
 
+#estrutura5 {
+
+}
+
 /* ----- Personalização das Divs ----- */
 
 /* Referente à parte 1 do site, contendo Banner e linha de separação laranja */
@@ -197,4 +201,17 @@ strong {
 
 .prods-img {
     width: 70px;
+}
+
+/* Referente à parte 5 do site, a parte de conteúdo "Sustentabilidade e Processo Produtivo */
+
+#sust-process {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+#sust-process img {
+    width: 300px;
 }
