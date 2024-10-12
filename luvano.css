@@ -276,13 +276,17 @@ strong {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     background-color: white;
     width: 50%;
     height: 100%;
     border-radius: 20px 0 0 20px;
-    gap: 20px;
+    gap: 10px;
     padding: 20px;
+}
+
+#tit-back7 {
+    margin-bottom: 20px;
+    align-self: center ;
 }
 
 h6 {
@@ -294,14 +298,20 @@ h6 {
     display: flex;
     align-items: center;
     gap: 10px;
-    border: 1px solid transparent;
     padding: 5px;
+    border: 2px solid transparent;
 }
 
-.listing-fale-conosco:hover {
-    border-bottom: 2px solid var(--laranja);
-    cursor: pointer;
+.listing-fale-conosco h6:hover {
+    border-bottom: solid 2px var(--laranja);
 }
+
+.a-contato {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 
 #aba-formulario {
     display: flex;
@@ -317,7 +327,7 @@ h6 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
+    width: 70%;
     gap: 15px;
 }
 
