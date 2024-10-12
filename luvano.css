@@ -423,6 +423,11 @@ footer {
     text-align: center;
 }
 
+iframe {
+    width: 350px;
+    height: 250px;
+}
+
 .registro {
     background-color: var(--cinza-escuro);
     display: flex;
