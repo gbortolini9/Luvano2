@@ -407,6 +407,9 @@ footer {
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    position: relative;
+    left: 50%;
+    right: 50%;
 }
 
 #a-footer {
@@ -438,9 +441,9 @@ iframe {
     background-color: var(--cinza-escuro);
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 0.9em;
     flex-wrap: wrap;
-    align-items: center;
     color: white;
   }
   
