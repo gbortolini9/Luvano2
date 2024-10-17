@@ -1,11 +1,16 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: "MinhaFontePersonalizada"; /* Nome da fonte */
+    src: url("img/fonte/TT0142M_.TTF") format("truetype"); /* URL do arquivo da fonte e formato */
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "MinhaFontePersonalizada";
     list-style-type: none;
     transition: all 0.3s ease;
 }
