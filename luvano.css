@@ -150,12 +150,13 @@ nav ul li:hover {
 }
 
 #banner-h2 {
-    text-align: center;
+    text-align: end;
+    position: relative;
+    right: -120px;
 }
 
 #banner-h2 h2 {
-    text-shadow: 1px 1px 5px black;
-
+    text-shadow: 1px 1px 6px black;
 }
 
 /* Referente à parte 3 do site, a parte de conteúdo "Tecnologia e Inovação */
