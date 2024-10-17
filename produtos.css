@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+:root {
+    --cinza-escuro: #1B1C1B;
+    --cinza-claro: #383838;
+    --laranja: #EE7916;
+}
+
+/* Background da página */
+
+#background1-produtos {
+    background-color: white;
+}
+
+#background2-produtos {
+    background-color: white;
+}
+
+#background3-produtos {
+    background-color: white;
+}
+
+/* Estrutura das Sections */
+
+/* Estrutura section 1, referente à Linha industrial  */
+
+#estrutura1-produtos {
+    
+}
+
+/* Estrutura section 2, referente aos itens da Linha industrial  */
+
+.produtos-linha-industrial {
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.produtos-linha-industrial img {
+    width: 500px;
+    align-self: center;
+}
+
+.itens-linha-industrial {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.itens-linha-industrial img {
+    width: 300px;
+}
+
+.itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nome-produtos {
+    text-transform: uppercase;
+}
+
+/* Estrutura section 3, referente aos itens da Linha industrial Especial  */
+
+#estrutura3-produtos {
+    display: flex;
+    flex-direction: column;
+}
