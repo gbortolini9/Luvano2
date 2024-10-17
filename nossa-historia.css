@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+:root {
+    --cinza-escuro: #1B1C1B;
+    --cinza-claro: #383838;
+    --laranja: #EE7916;
+}
+
+
+/* Background da página */
+
+#background1-historia {
+    background-color: white;
+}
+
+#background2-historia {
+    background-color: white;
+}
+
+/* Estrutura das Sections */
+
+/* Estrutura section 1, referente à história da empresa  */
+
+#estrutura1-historia {
+    display: flex;
+    flex-direction: column;
+}
+
+#historia {
+    display: flex;
+    flex-direction: column;
+}
+
+#titulo-historia {
+    position: relative;
+    top: 40px;
+}
+
+#hist-img {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+#hist-p {
+    width: 800px;
+}
+
+#img-empresa-historia {
+    width: 200px;
+}
+
+/* Estrutura section 2, referente à Missão, Visão e Metas  */
+
+#estrutura2-historia {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.itens {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.itens-img {
+    width: 90px;
+}
+
+.missao-visao-metas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mvm-h3 {
+    color: var(--laranja);
+    font-size: 25px;
+}
+
+.mvm-p {
+    font-size: 20px;
+    font-style: italic;
+}
