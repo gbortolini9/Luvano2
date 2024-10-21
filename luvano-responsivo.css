@@ -23,6 +23,15 @@
 
 /* Responsividade página principal */
 
+/* Estrutura das Sections */
+
+@media(max-width: 420px) {
+    .estrutura {
+        padding: 10px;
+    }
+    
+}
+
 /* Referente à parte 1 do site, contendo Banner e linha de separação laranja */
 
 @media(max-height: 690px) {
@@ -115,16 +124,13 @@
 
 @media(max-width: 655px) {
 
-    .estrutura {
-        overflow: hidden;
-    }
 
     #fibras {
         display: none;
     }
 
     #tit-back6 {
-        font-size: 23px;
+        font-size: 20px;
         align-self: center;
         margin: 0;
     }
@@ -144,7 +150,7 @@
     }
 
     #aba-formulario {
-        width: 100%;
+        width: 90%;
     }
 }
 
