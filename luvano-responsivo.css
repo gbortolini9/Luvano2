@@ -25,6 +25,16 @@
 
 /* Referente à parte 1 do site, contendo Banner e linha de separação laranja */
 
+@media(max-height: 690px) {
+    #background1 {
+        height: 400px;
+    }
+
+    #logo-section h2 {
+        top: 370px;
+    }
+}
+
 @media(max-width: 789px) {
     #estrutura1 {
         justify-content: center;
@@ -37,8 +47,7 @@
     #nav-section nav {
         position: absolute;
         top: 30px;
-        right: 50%;
-        left: 50%;
+        right: 20px;
     }
 
     #banner-h2 {
@@ -46,9 +55,14 @@
     }
 }
 
-@media(max-width: 400px) {
+@media(max-width: 499px) {
+    #nav-section nav {
+        left: 10px;
+    }
+
     nav ul {
-        font-size: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -101,8 +115,18 @@
 
 @media(max-width: 655px) {
 
+    .estrutura {
+        overflow: hidden;
+    }
+
     #fibras {
         display: none;
+    }
+
+    #tit-back6 {
+        font-size: 23px;
+        align-self: center;
+        margin: 0;
     }
 }
 
