@@ -37,7 +37,8 @@
     #nav-section nav {
         position: absolute;
         top: 30px;
-        right: 20px;
+        right: 50%;
+        left: 50%;
     }
 
     #banner-h2 {
