@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "MinhaFontePersonalizada"; /* Nome da fonte */
+    src: url("img/fonte/TT0142M_.TTF") format("truetype"); /* URL do arquivo da fonte e formato */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "MinhaFontePersonalizada";
+    list-style-type: none;
+    transition: all 0.3s ease;
+}
+
+:root {
+    --cinza-escuro: #1B1C1B;
+    --cinza-claro: #383838;
+    --laranja: #EE7916;
+}
+
+/* Responsividade página principal */
+
+/* Referente à parte 1 do site, contendo Banner e linha de separação laranja */
+
+@media(max-width: 789px) {
+    #estrutura1 {
+        justify-content: center;
+    }
+
+    #logo {
+        width: 280px;   
+    }
+
+    #nav-section nav {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+    }
+
+    #banner-h2 {
+        display: none;
+    }
+}
+
+@media(max-width: 400px) {
+    nav ul {
+        font-size: 15px;
+    }
+}
+
+/* Referente à parte 3 do site, a parte de conteúdo "Tecnologia e Inovação */
+
+#estrutura3-escondida {
+    display: none;
+}
+
+@media(max-width: 699px) {
+    #estrutura3 {
+        display: none;
+    }
+
+    #estrutura3-escondida {
+        display: flex;
+    }
+
+    #tec-inovacao-img img {
+        width: 200px;
+    }
+
+}
+
+/* Referente à parte 4 do site, a parte de boxes de Produtos */
+
+@media(max-width: 1069px) {
+    #estrutura4 {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+/* Referente à parte 5 do site, a parte de conteúdo "Sustentabilidade e Processo Produtivo */
+
+@media(max-width: 749px) {
+    #sust-process {
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    #sust-process img {
+        width: 250px;
+        margin-bottom: -60px;
+    }
+}
+
+/* Referente à parte 6 do site, a parte de conteúdo "Recondicionamento */
+
+@media(max-width: 655px) {
+
+    #fibras {
+        display: none;
+    }
+}
+
+/* Referente à parte 7 do site, a parte de *Formulário de e-mail*/
+
+@media(max-width: 660px) {
+
+    #contato {
+        flex-direction: column;
+    }
+
+    #aba-redes-sociais { 
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    #aba-formulario {
+        width: 100%;
+    }
+}
+
+/* Referente à parte 8 do site, a parte do *Rodapé*/
+
+@media(max-width: 799px) {
+
+    footer {
+        flex-direction: column;
+    }
+
+    #footer-nav {
+        margin: 80px 0;
+    }
+
+}
