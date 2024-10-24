@@ -42,12 +42,22 @@
     align-items: center;
 }
 
-#hist-p {
-    width: 800px;
-}
-
 #img-empresa-historia {
     width: 200px;
+}
+
+@media(max-width: 984px) {
+    #titulo-historia {
+        position: relative;
+        top: 0px;
+    }
+}
+
+@media(max-width: 560px) {
+    #hist-img {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 /* Estrutura section 2, referente à Missão, Visão e Metas  */
@@ -83,4 +93,12 @@
 .mvm-p {
     font-size: 20px;
     font-style: italic;
+}
+
+@media(max-width: 399px) {
+    .itens {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
 }

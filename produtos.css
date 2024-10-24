@@ -71,6 +71,27 @@
 
 .nome-produtos {
     text-transform: uppercase;
+    text-align: center;
+}
+
+@media(max-width: 918px) {
+    .itens-linha-industrial {
+        flex-wrap: wrap;
+    }
+
+    .nome-produtos {
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width: 524px) {
+    .produtos-linha-industrial img {
+        width: 300px;
+    }
+
+    .itens-linha-industrial img {
+        width: 200px;
+    }
 }
 
 /* Estrutura section 3, referente aos itens da Linha industrial Especial  */
@@ -78,6 +99,40 @@
 #estrutura3-produtos {
     display: flex;
     flex-direction: column;
+}
+
+#tit-especiais {
+    width: 500px;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+#img-especiais {
+    width:  400px;
+}
+
+@media(max-width: 709px) {
+    #especiais {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 530px) {
+    #img-especiais {
+        width:  300px;
+    }
+
+    #tit-especiais {
+        width: 400px;
+    }
+}
+
+
+@media(max-width: 415px) {
+    #tit-especiais {
+        width: 300px;
+    }
 }
 
 /* Estrutura section 5, referente aos Projetos especiais  */
@@ -94,5 +149,12 @@
 
 #img-projetos-especiais {
     width: 250px;
+}
+
+@media(max-width: 575px) {
+    #estrutura5-produtos {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
 }
 
