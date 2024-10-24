@@ -1,16 +1,11 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: "MinhaFontePersonalizada"; /* Nome da fonte */
-    src: url("img/fonte/TT0142M_.TTF") format("truetype"); /* URL do arquivo da fonte e formato */
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "MinhaFontePersonalizada";
+    font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;
     transition: all 0.3s ease;
 }
@@ -186,6 +181,7 @@ strong {
 
 .txt-padrao {
     font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #tec-inovacao {
@@ -205,25 +201,38 @@ strong {
 
 /* Referente à parte 4 do site, a parte de boxes de Produtos */
 
-.prods {
+.quadros {
+    display: block;
     width: 240px;
-    height: 140px;
-    background-color: lightgray;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-transform: uppercase;
+    height: 170px;
+    position: relative;
 }
 
-.prods:hover {
+.quadros img {
+    width: 240px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+}
+
+#quadros-on {
+    display: block;
+    opacity: 1;
+}
+
+#quadros-off {
+    opacity: 0;
+}
+
+.quadros:hover #quadros-on {
+    opacity: 0;
     cursor: pointer;
-    background-color: var(--laranja);
 }
 
-.prods-img {
-    width: 70px;
+.quadros:hover #quadros-off {
+    opacity: 1;
+    cursor: pointer;
 }
 
 /* Referente à parte 5 do site, a parte de conteúdo "Sustentabilidade e Processo Produtivo */
@@ -334,18 +343,20 @@ h6 {
     padding: 20px;
 }
 
-#form-email {
+#formm {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
-    gap: 15px;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
 }
 
 .campo-form {
     padding: 10px;
     border: none;
     border-radius: 10px;
+    width: 100%;
 }
 
 #text {

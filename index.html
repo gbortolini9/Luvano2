@@ -23,8 +23,8 @@
                         <li><a class="li-branco" href="index.html">Home</a></li>
                         <li><a class="li-laranja" href="nossa-historia.html">Empresa</a></li>
                         <li><a class="li-branco" href="produtos.html">Produtos</a></li>
-                        <li><a class="li-laranja" href="#">Localização</a></li>
-                        <li><a class="li-branco" href="#">Contato</a></li>
+                        <li><a class="li-laranja" href="#localizacao">Localização</a></li>
+                        <li><a class="li-branco" href="#localizacao">Contato</a></li>
                     </ul>
                 </nav>
                 <div id="banner-h2">
@@ -77,21 +77,21 @@
     </section>
     <section class="background" id="background4">
         <div class="estrutura" id="estrutura4">
-            <div class="prods" id="prod1">
-                <h4>Linha Industrial</h4>
-                <img class="prods-img" src="img/luvanoicon1.png" alt="">
+            <div class="quadros">
+                <img id="quadros-on" src="img/prods/luv_quadr1off.png" alt="">
+                <img id="quadros-off" src="img/prods/luv_quadr1on.png" alt="">
             </div>
-            <div class="prods" id="prod2">
-                <h4>Linha Doméstica</h4>
-                <img class="prods-img" src="img/luvanoicon2.png" alt="">
+            <div class="quadros">
+                <img id="quadros-on" src="img/prods/luv_quadr2off.png" alt="">
+                <img id="quadros-off" src="img/prods/luv_quadr2on.png" alt="">
             </div>
-            <div class="prods" id="prod3">
-                <h4>Recondicionamento</h4>
-                <img class="prods-img" src="img/luvanoicon3.png" alt="">
+            <div class="quadros">
+                <img id="quadros-on" src="img/prods/luv_quadr3off.png" alt="">
+                <img id="quadros-off" src="img/prods/luv_quadr3on.png" alt="">
             </div>
-            <div class="prods" id="prod4">
-                <h4>Projetos Especiais</h4>
-                <img class="prods-img" src="img/luvanoicon4.png" alt="">
+            <div class="quadros">
+                <img id="quadros-on" src="img/prods/luv_quadr4off.png" alt="">
+                <img id="quadros-off" src="img/prods/luv_quadr4on.png" alt="">
             </div>
         </div>
     </section>
@@ -176,13 +176,29 @@
                         </a>
                     </span>
                 </div>
+                <div id="localizacao"></div>
                 <div id="aba-formulario">
-                    <form id="form-email" action="submit_form.php" method="post">
-                        <input type="email" class="campo-form" id="email" name="email" placeholder="seuemail@exemplo.com" required>
-                        <input type="name" class="campo-form" id="name" name="name" placeholder="Nome completo" required>
-                        <input type="tel" class="campo-form" id="tel" name="tel" placeholder="Telefone contato" required>
-                        <textarea class="campo-form" id="text" name="text" rows="4" cols="50" placeholder="Mensagem..."></textarea required>
-                        <input id="btn-envia" type="submit" value="Enviar">
+                    <form id="formm" action="http://formmail.kinghost.net/formmail.cgi" method="POST"> 
+                        <input type="hidden" name="recipient" value="guibortolini9@gmail.com"> <!-- Pode ser qualquer endereço de email -->
+                        <input type="hidden" name="redirect" value="resposta.html"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
+                        <input type="hidden" name="subject" value="Mensagem enviada via Site">  <!-- Assunto da mensagem -->
+                        <input type="hidden" name="email" value="luvano@luvano.com.br">   <!-- Deve ser uma conta de email ativa em seu domínio -->
+                        
+                        <p class="campo-form"> 
+                        <input class="campo-form" type="text" size="30" name="nome" placeholder="Nome completo"> 
+                        </p>   
+                        
+                        <p class="campo-form">
+                        <input class="campo-form" type="text" size="30" name="replyto" placeholder="E-mail"> 
+                        </p>   
+                        
+                        <p class="campo-form">  
+                        <input class="campo-form" id="text" type="text" size="30" name="Comentarios" placeholder="Mensagem...">
+                        </p>   
+                        
+                        <p class="campo-form"> 
+                        <input id="btn-envia" type="submit" name="BTEnvia" value="Enviar"> 
+                        </p> 
                     </form>
                 </div>
             </div>
@@ -201,7 +217,7 @@
                     <span id="footer-redes-sociais">
                         <a href="#"><img src="img/instagram.png" alt=""></a>
                         <a href="#"><img src="img/linkedin.png" alt=""></a>
-                        <a href="#"><img src="img/whatsapp.png" alt=""></a>
+                        <a href="https://wa.me/5551992850853?text=Quero%20mais%20informa%C3%A7%C3%B5es%20sobre..."><img src="img/whatsapp.png" alt=""></a>
                     </span>
                 </div>
                 <div>
@@ -209,8 +225,8 @@
                         <li><a id="a-footer" href="index.html">Home</a></li>
                         <li><a id="a-footer" href="nossa-historia.html">Empresa</a></li>
                         <li><a id="a-footer" href="produtos.html">Produtos</a></li>
-                        <li><a id="a-footer" href="#">Localização</a></li>
-                        <li><a id="a-footer" href="#">Contato</a></li>
+                        <li><a id="a-footer" href="#localizacao">Localização</a></li>
+                        <li><a id="a-footer" href="#localizacao">Contato</a></li>
                     </ul>
                 </div> 
                 <div id="footer-iframe">
@@ -222,7 +238,7 @@
         </div>
     </section>
     <div class="registro">
-        <div class="logo-bortoac">Desenvolvido por Bortoac<a class="bortoac-a" href="https://bortoac.com.br/" target="_blank"><img class="bortoac-logo" src="Img/bortoac_logo3.png" alt=""></div>
+        <div class="logo-bortoac">Desenvolvido por Bortoac<a class="bortoac-a" href="https://bortoac.com.br/" target="_blank"><img class="bortoac-logo" src="img/bortoac_logo3.png" alt=""></div>
     </div>
 </body>
 </html>
