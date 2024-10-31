@@ -58,6 +58,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 
     display: flex;
     justify-content: space-around;
@@ -81,7 +82,7 @@
 #estrutura6 {
     display: flex;
     justify-content: center;
-    margin: 50px 0;
+    margin: 20px 0;
 }
 
 #estrutura7 {
@@ -94,6 +95,27 @@
 }
 
 /* ----- Personalização das Divs ----- */
+
+/* Referente à parte 0 do site */
+
+#redes-sociais-topo {
+    height: 40px;
+    width: 100%;
+
+    border-bottom: 2px solid var(--laranja);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.img-topo {
+    margin: 5px 0;
+    width: 30px;
+    padding: 2px;
+    margin-right: 20px;
+}
 
 /* Referente à parte 1 do site, contendo Banner e linha de separação laranja */
 
@@ -116,6 +138,7 @@
     top: 55vh;
     font-style: italic;
     text-shadow: 1px 1px 5px #0000002c;
+    color: white;
 }
 
 #nav-section {
@@ -167,7 +190,11 @@ nav ul li:hover {
     color: var(--laranja);
     gap: 10px;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 24px;    
+}
+
+.titulos h3 {
+    font-weight: lighter;
 }
 
 .logo-titulo { 
@@ -182,6 +209,7 @@ strong {
 .txt-padrao {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
 }
 
 #tec-inovacao {
@@ -271,11 +299,9 @@ strong {
     flex-direction: column;
     padding: 20px;
     font-size: 20px;
+    gap: 10px;
 }
 
-#tit-back6 {
-    margin-bottom: 30px;
-}
 
 /* Referente à parte 7 do site, a parte de *Formulário de e-mail*/
 
